@@ -16,17 +16,17 @@ export default function Hero() {
                     joy in life
                 </p>
                 <div className="flex gap-4">
-                    <button className=" flex gap-2 bg-primary text-white px-8 py-2 rounded-full">
-                        Order Now
+                    <button className=" flex items-center gap-2 bg-primary text-white px-8 py-2 rounded-full">
+                        <span> Order Now</span> 
                         <RightArrow />
                     </button>
-                    <button className="flex gap-2 border-[2px] border-bg-primary text-primary px-8 py-2 rounded-full">
-                        More
+                    <button className="flex items-center gap-2 border-[2px] border-bg-primary text-primary px-8 py-2 rounded-full">
+                        <span> More </span>
                         <RightArrow />
                     </button>
                 </div>
             </div>
-            <div className="col-span-3 scale-125 relative">
+            <div className="col-span-3 ml-10 scale-125 relative">
                 <Image src="/pizza.png" layout="fill" objectFit="contain" alt="pizza" />
             </div>
         </section>
