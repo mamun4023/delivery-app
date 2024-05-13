@@ -10,7 +10,7 @@ export default function HomeMenu() {
                     <Image src="/sallad1.png" alt="salad" layout="fill" objectFit="contain" />
                 </div>
                 <div className="h-60 w-40 absolute -right-8 -top-20 -z-10">
-                    <Image src="/sallad2.png" alt="salad" layout="fill" objectFit="contain" />
+                    <Image src="/sallad2.png" alt="salad" layout="fill" objectFit="contain"  />
                 </div>
             </div>
             <div className="text-center ">
