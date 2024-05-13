@@ -5,13 +5,11 @@ import bcrypt from 'bcrypt';
 import mongoose from 'mongoose'
 
 
-
 export async function POST(req){
-
 
     const body = await req.json();
     
-    console.log("body", body)
+    console.log(body)
 
     mongoose.connect(process.env.MONGO_URL);
 
