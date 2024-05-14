@@ -11,14 +11,14 @@ export default function Register() {
     const [error, setError] = useState(false);
 
     const submitHandler = async (event) => {
-        e.preventDefault();
+        event.preventDefault();
 
         const data = {
             email,
             password,
         };
 
-        await fetch("http://localhost:3000/api/auth/register", {
+        await fetch("/api/auth/register", {
             method: "POST",
             body: JSON.stringify(data),
             headers: { "Content-Type": "application/json" },

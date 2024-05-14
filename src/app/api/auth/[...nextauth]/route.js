@@ -2,10 +2,18 @@ import { User } from "@/models/User";
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcrypt";
 import nextAuth from "next-auth";
+import clientPromise from  "@/app/libs/mongoConnect";
+import { MongoDBAdapter } from "@auth/mongodb-adapter"
+import GoogleProvider from "next-auth/providers/google";
 
 const handler = nextAuth({
     secret: process.env.SECRET,
+    adapter: MongoDBAdapter(clientPromise),
     providers: [
+        GoogleProvider({
+            clientId: process.env.GOOGLE_CLIENT_ID,
+            clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+          }),
         CredentialsProvider({
             name: "Credentials",
             id: "credentials",

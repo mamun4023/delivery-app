@@ -6,14 +6,9 @@ import HomeMenu from "@/components/layout/HomeMenu";
 import SectionHeaders from "@/components/layout/SectionHeaders";
 import MenuItem from "@/components/menu/MenuItem";
 import { useEffect } from "react";
-import connectDB from '../models/db';
+
 
 export default function Home() {
-
-
-    useEffect(()=>{
-        connectDB()
-    },[])
 
 
     return (
