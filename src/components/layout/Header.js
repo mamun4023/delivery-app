@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
+import { useEffect } from "react";
 
 export default function Header() {
     const session = useSession();
@@ -11,6 +12,8 @@ export default function Header() {
     if(userName && userName.includes(" ")){
         userName = userName.split(" ")[0]
     }
+
+   
 
     return (
         <header className="flex items-center justify-between">
