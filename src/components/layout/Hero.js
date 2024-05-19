@@ -16,11 +16,11 @@ export default function Hero() {
                     joy in life
                 </p>
                 <div className="flex gap-4">
-                    <button className=" flex items-center gap-2 bg-primary text-white px-8 py-2 rounded-full">
-                        <span> Order Now</span> 
+                    <button className="flex items-center justify-between gap-2 bg-primary hover:bg-white hover:text-primary text-white px-8 py-3 rounded-full transition-all duration-500 ">
+                        <span className="w-[80px]" > Order Now</span> 
                         <RightArrow />
                     </button>
-                    <button className="flex items-center gap-2 border-[2px] border-bg-primary text-primary px-8 py-2 rounded-full">
+                    <button className="flex items-center justify-between gap-2 border-[2px] border-bg-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full transition-all duration-500 ">
                         <span> More </span>
                         <RightArrow />
                     </button>
