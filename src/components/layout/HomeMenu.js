@@ -11,28 +11,28 @@ const MENU_DATA= [
         id : 1,
         title : "Pepperoni Pizza",
         price : 15,
-        desc : "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination",
+        desc : "Variety of spicy salami made from cured pork and beef seasoned with paprika and chili peppers",
         image : Pizza1.src
     },
     {
         id : 2,
-        title : "Pepperoni Pizza",
+        title : "Detroit Pizza",
         price : 10,
-        desc : "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination",
+        desc : "Traditionally topped to the edges with mozzarella or Wisconsin brick cheese, which caramelizes",
         image : Pizza2.src
     },
     {
         id : 3,
-        title : "Pepperoni Pizza",
+        title : "Sicilian Pizza",
         price : 40,
-        desc : "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination",
+        desc : "Variety of spicy salami made from cured pork and beef seasoned with paprika and chili peppers",
         image : Pizza3.src
     },
     {
         id : 4,
-        title : "Pepperoni Pizza",
+        title : "Cuban Pizza",
         price : 40,
-        desc : "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination",
+        desc : "Traditionally topped to the edges with mozzarella or Wisconsin brick cheese, which caramelizes",
         image : Pizza4.src
     }
 ]
