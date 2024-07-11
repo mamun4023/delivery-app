@@ -3,7 +3,7 @@ import RightArrow from "../icons/right_arrow";
 
 export default function Hero() {
     return (
-        <section className="  grid grid-cols-5 mt-20 ">
+        <section className="  grid grid-cols-5 mt-10 ">
             <div className="col-span-2  py-12">
                 <h1 className="text-4xl font-semibold leading-normal">
                     Everything <br />
@@ -26,8 +26,8 @@ export default function Hero() {
                     </button>
                 </div>
             </div>
-            <div className="col-span-3 ml-10 scale-125 relative">
-                <Image src="/pizza.png" layout="fill" objectFit="contain" alt="pizza" />
+            <div className="col-span-3 ml-10 relative w-full">
+                <Image src="/pizza.png" fill  alt="pizza" loading="lazy" />
             </div>
         </section>
     );

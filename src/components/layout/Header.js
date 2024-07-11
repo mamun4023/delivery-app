@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
 import { useEffect } from "react";
+import Cart from "./Cart";
 
 export default function Header() {
     const session = useSession();
@@ -41,7 +42,9 @@ export default function Header() {
                 )}
 
                 {status === 'unauthenticated' && <> 
-
+                    <Link href={"/checkout"} className="">
+                        <Cart />
+                </Link>
                 <Link href={"/login"} className="">
                     Login
                 </Link>
@@ -56,3 +59,5 @@ export default function Header() {
         </header>
     );
 }
+
+
