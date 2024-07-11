@@ -6,7 +6,7 @@ export default function Cart(){
 
     console.log("state", state)
     return(
-        <div className=" relative">
+        <div className="relative">
              <span className=" text-center absolute size-6 text-sm  bg-primary rounded-full text-white left-4 -top-2">
                 {state?.itemList?.length ?? 0}
              </span>
